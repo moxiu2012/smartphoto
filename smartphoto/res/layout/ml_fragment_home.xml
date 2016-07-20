@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="23dp"
+        android:background="#00000000"
+        android:text="    实例展示"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#550000dd" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp" >
+
+        <com.moxiuyuer.smartphoto.utils.HorizontialListView
+            android:id="@+id/list_view_h"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#ffffff" />
+
+        <ImageView
+            android:id="@+id/iv_home_bg_example"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#550000dd" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="23dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="    本地相册"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_home_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:background="#0a0000ff"
+            android:text="扫描"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#550000dd" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <ListView
+            android:id="@+id/list_view_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_home_bg_local"
+            android:layout_width="210dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:background="#06000000"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/mi_go"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

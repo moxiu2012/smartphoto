@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_ws"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#220044ff"
+            android:text="上页"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.moxiuyuer.smartphoto.utils.HorizontialListView
+            android:id="@+id/list_view_h_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#220044ff"
+            android:text="下页"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.moxiuyuer.smartphoto.view.ThemeView
+        android:id="@+id/theme_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pageNo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="1"
+            android:background="#220044ff"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.moxiuyuer.smartphoto.utils.HorizontialListView
+            android:id="@+id/list_view_h_image"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

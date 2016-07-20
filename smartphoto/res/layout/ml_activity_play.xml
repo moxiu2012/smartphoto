@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fl_play"
+    android:layout_height="match_parent" >
+
+    <com.moxiuyuer.smartphoto.view.PageWidget
+        android:id="@+id/pw_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <ImageView
+        android:id="@+id/iv_play_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:src="@drawable/mi_bg_play"
+        />
+
+</FrameLayout>

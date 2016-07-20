@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:mxy="http://schemas.android.com/apk/res/com.moxiuyuer.smartphoto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#02000000"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="23dp"
+            android:background="#550000dd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_my"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/icon"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mi_me_portrait" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录名：moxiu"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginBottom="23dp"
+            android:background="#550000dd" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#550000dd" />
+
+        <com.moxiuyuer.smartphoto.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mxy:item_show_line="true"
+            mxy:item_src="@drawable/mi_me_keep"
+            mxy:item_text="收藏" />
+
+        <com.moxiuyuer.smartphoto.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mxy:item_src="@drawable/mi_me_cloud"
+            mxy:item_text="云端" />
+
+        <com.moxiuyuer.smartphoto.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            mxy:item_src="@drawable/mi_me_theme"
+            mxy:item_text="主题商店" />
+
+        <com.moxiuyuer.smartphoto.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            mxy:item_src="@drawable/mi_me_setting"
+            mxy:item_text="设置" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mi_me_quit"
+            android:gravity="center"
+            android:text="退出"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_theme_image"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:background="@drawable/mi_bg_item_theme"
+            android:paddingBottom="30dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="18dip"
+            android:scaleType="fitXY" />
+
+        <RadioButton
+            android:id="@+id/cb_theme_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/ms_theme_select_icon" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_theme_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/framelayout"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Camera"
+        android:textSize="16sp" />
+
+</LinearLayout>
